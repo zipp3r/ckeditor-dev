@@ -1159,7 +1159,7 @@
 		 * @param {Object} [editable]
 		 */
 		destroyEditable: function( editableName, offline, editable ) {
-			editable = editable || this.editables[ editableName ],
+			var editable = editable || this.editables[ editableName ],
 				canDestroyFilter = true;
 
 			editable.removeListener( 'focus', onEditableFocus );
